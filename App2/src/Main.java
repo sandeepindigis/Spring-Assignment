@@ -2,8 +2,8 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
-        car.setEngine(new PatrolEngine());
+        Car car = new Car(new DesigelEngin());
+//        car.setEngine(new PatrolEngine());
         car.drive();
     }
 }
