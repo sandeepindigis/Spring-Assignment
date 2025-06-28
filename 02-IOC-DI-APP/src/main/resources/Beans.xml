@@ -10,7 +10,13 @@
 <!--        <constructor-arg name="engine" ref="desigelEng"/>-->
 <!--    </bean>-->
 
-    <bean id="patrolEng" class="org.example.PatrolEngine" autowire-candidate="false"/>
-    <bean id="desigelEng" class="org.example.DesigelEngin" autowire-candidate="true"/>
+<!--     How to use auto autowiring -->
+<!--    <bean id="patrolEng" class="org.example.PatrolEngine" autowire-candidate="false"/>-->
+<!--    <bean id="desigelEng" class="org.example.DesigelEngin" autowire-candidate="true"/>-->
+<!--    <bean id="car" class="org.example.Car" autowire="constructor"/>-->
+
+<!--    How to use primary in place of autowiring-->
+    <bean id="patrolEng" class="org.example.PatrolEngine" primary="true"/>
+    <bean id="desigelEng" class="org.example.DesigelEngin" />
     <bean id="car" class="org.example.Car" autowire="constructor"/>
     </beans>
