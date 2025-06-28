@@ -7,6 +7,7 @@ public class PatrolEngine implements IEngine {
     }
     @Override
     public int start() {
+        System.out.println(" Patrol");
         return 1;
     }
 }

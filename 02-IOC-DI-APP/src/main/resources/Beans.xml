@@ -3,10 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="patrolEng" class="org.example.PatrolEngine"/>
-    <bean id="desigelEng" class="org.example.DesigelEngin"/>
-    <bean id="car" class="org.example.Car" scope="prototype">
-        <property name="engine" ref="patrolEng"/>
-        <constructor-arg name="engine" ref="desigelEng"/>
-    </bean>
-</beans>
+<!--    <bean id="patrolEng" class="org.example.PatrolEngine"/>-->
+<!--    <bean id="desigelEng" class="org.example.DesigelEngin"/>-->
+<!--    <bean id="car" class="org.example.Car" scope="prototype">-->
+<!--        <property name="engine" ref="patrolEng"/>-->
+<!--        <constructor-arg name="engine" ref="desigelEng"/>-->
+<!--    </bean>-->
+
+    <bean id="patrolEng" class="org.example.PatrolEngine" autowire-candidate="false"/>
+    <bean id="desigelEng" class="org.example.DesigelEngin" autowire-candidate="true"/>
+    <bean id="car" class="org.example.Car" autowire="constructor"/>
+    </beans>
