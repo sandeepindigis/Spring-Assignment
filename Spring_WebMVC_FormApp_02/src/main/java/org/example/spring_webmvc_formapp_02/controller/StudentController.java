@@ -68,7 +68,6 @@ public class StudentController {
 
         model.addAttribute("courses", courseList);
         model.addAttribute("timings", timingsList);
-        model.addAttribute("student", new Student());
 
         if(result.hasErrors()) {
             return "index";

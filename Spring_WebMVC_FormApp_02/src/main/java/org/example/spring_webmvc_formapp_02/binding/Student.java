@@ -9,15 +9,15 @@ import java.util.Arrays;
 
 
 public class Student {
-    @NotNull
+    @NotNull(message = "Id is required")
     public Integer studentId;
-    @NotNull
+    @NotNull(message = "Name is required")
     @Size(min = 3, max = 15)
     public String studentName;
-    @NotNull
+    @NotNull(message = "Email is required")
     @Email(regexp = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}")
     public String email;
-    @NotNull
+    @NotNull(message = "Gender is required")
     public String gender;
     public String course;
     public String[] timing;

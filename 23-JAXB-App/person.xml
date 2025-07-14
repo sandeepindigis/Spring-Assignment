@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person>
+    <address>
+        <city>City</city>
+        <country>Country</country>
+        <state>State</state>
+        <street>Street</street>
+        <zip>Zip</zip>
+    </address>
+    <age>22</age>
+    <gender>Male</gender>
+    <name>John</name>
+</person>
