@@ -1,6 +1,8 @@
-package org.example.sb_rest_api_01.binding;
+package org.example.sb_rest_api_02.binding;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement
 public class Customer {
     private String name;
     private String email;
